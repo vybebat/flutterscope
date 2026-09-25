@@ -1,0 +1,14 @@
+__pycache__/
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Real fixture builds are rebuilt from fixtures/apps, never committed.
+fixtures/build/
+
+# Never commit an app you were given to test.
+*.apk
+*.aab
+*.ipa
+*.so
