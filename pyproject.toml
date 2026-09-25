@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flutterscope"
+version = "0.1.0"
+description = "Security facts from compiled Flutter apps, mapped to OWASP MASVS v2.1."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+authors = [{ name = "vybebat", email = "hello@vybebat.dev" }]
+keywords = ["flutter", "dart", "security", "masvs", "mobile", "sarif"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/vybebat/flutterscope"
+Issues = "https://github.com/vybebat/flutterscope/issues"
+
+[project.scripts]
+flutterscope = "flutterscope.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
